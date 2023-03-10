@@ -1,0 +1,174 @@
+@font-face {
+  font-family: "Averta";
+  font-weight: 300;
+  font-style: normal;
+  src: url("../assets/fonts/Averta/Averta-Light.woff2");
+}
+@font-face {
+  font-family: "Averta";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../assets/fonts/Averta/Averta-Regular.woff2");
+}
+@font-face {
+  font-family: "Averta";
+  font-weight: 600;
+  font-style: normal;
+  src: url("../assets/fonts/Averta/Averta-SemiBold.woff2");
+}
+
+body {
+  margin: 0;
+  font-family: "Averta", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #eef1f7;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1260px;
+  margin: 0 auto;
+  flex-direction: column;
+  margin-top: 50px;
+  padding: 0 10px;
+}
+
+.card {
+  width: 240px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
+  background-color: var(--card-body-bg);
+  margin: 5px;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 15px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  font-size: 14px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.card-header h4 {
+  margin: 0;
+}
+
+.card-icon {
+  margin-right: 5px;
+}
+.card-body {
+  padding: 15px;
+  padding-top: 0;
+  background-color: var(--card-body-bg);
+}
+.card-title {
+  font-size: 18px;
+  margin: 0;
+  color: var(--card-title-text);
+}
+
+.card-subtitle {
+  font-size: 14px;
+  color: var(--card-subtext);
+  margin: 0;
+  margin-top: 5px;
+}
+
+.card-button-wrapper {
+  margin-top: 15px;
+}
+
+.card-button {
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 500px;
+  text-align: center;
+  padding: 5px 10px;
+  background-color: transparent;
+  min-width: 85px;
+}
+
+.view-button {
+  color: var(--view-btn-color);
+  border: 1px solid var(--view-btn-color);
+  margin-right: 5px;
+}
+.remove-button {
+  color: var(--remove-btn-color);
+  border: 1px solid var(--remove-btn-color);
+}
+
+.automated-origin {
+  color: var(--automated-origin-text);
+}
+.manual-origin {
+  color: var(--manual-origin-text);
+}
+
+.card-body__text {
+  font-size: 14px;
+  color: var(--card-subtext);
+  margin-bottom: 10px;
+}
+
+.card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 15px;
+  background-color: var(--card-footer-bg);
+  font-size: 10px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.card-footer-text {
+  font-size: 10px;
+  color: var(--card-subtext);
+  margin: 0;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.search-bar input {
+  flex: 1;
+  height: 100%;
+  padding: 10px;
+  border: none;
+  font-size: 16px;
+  font-family: "Averta";
+  color: #07114b;
+  background-color: transparent;
+  outline: none;
+}
+
+.search-bar input::placeholder {
+  color: #6b747f;
+}
+
